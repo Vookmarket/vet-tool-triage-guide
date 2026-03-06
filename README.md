@@ -135,12 +135,14 @@ python3 -m pytest test_tool.py -v
 - 運動失調、震え
 - 血尿、排尿困難
 
-### 🟢 GREEN — 様子見OK
+### 🟢 GREEN — 緊急性低・診察推奨
 
-- 1回の嘔吐（元気あり）
-- 軽い咳
+- 1回の嘔吐（元気あり・飲水可・血液なし・腹部膨張なし）
+- 軽い咳（呼吸困難なし）
 - 軽度の目やに
 - 軽度の掻痒
+
+> ⚠️ GREEN判定でも「電話だけでは正確な判断が難しいため、症状が続く場合や不安がある場合は来院を」と必ず伝えます。
 
 ### 安全側設計
 
@@ -153,10 +155,20 @@ python3 -m pytest test_tool.py -v
 
 本ツールの症状分類・緊急度判定基準は、以下の獣医学文献に基づいています：
 
-- **Merck Veterinary Manual** — XABCDE primary survey
-- **PMC NIH** — 色分けトリアージシステム (Red/Orange/Yellow/Green)
-- **Veterinary Emergency of Midlothian** — 5段階コード (White/Green/Yellow/Red/Black)
-- **森田動物医療センター** — 日本語症状分類（呼吸器、神経・意識、消化器、外傷、眼科、温度異常、犬猫特有症状）
+- **Merck Veterinary Manual** — XABCDE primary survey（一次トリアージフレームワーク）
+  https://www.merckvetmanual.com/emergency-medicine-and-critical-care/evaluation-and-initial-treatment-of-small-animal-emergency-patients/initial-triage-and-resuscitation-of-small-animal-emergency-patients
+
+- **Thomovsky E, Ilie L. "Basic triage in dogs and cats: Part I." (2024)** — 色分けトリアージ分類 (Red/Orange/Yellow/Green)
+  https://pmc.ncbi.nlm.nih.gov/articles/PMC10783570/
+
+- **Ruys LJ et al. "Evaluation of a veterinary triage list modified from a human five-point triage system in 485 dogs and cats." (2012)** — Manchester Triage System の獣医療適用（TWT 0/15/30-60/120分 → Red/Orange/Yellow/Green）
+  https://pubmed.ncbi.nlm.nih.gov/22702436/
+
+- **Veterinary Emergency of Midlothian** — 5段階トリアージコード (White/Green/Yellow/Red/Black)
+  https://midloervet.com/hospital-triage-status-codes/
+
+- **森田動物医療センター** — 日本語での緊急症状分類（呼吸器、神経・循環器、消化器、外傷、眼科、温度異常、犬猫特有症状）
+  https://www.animal-hospital.jp/blog/1075
 
 ## 免責事項
 
